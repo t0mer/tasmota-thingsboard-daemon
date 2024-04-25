@@ -1,4 +1,4 @@
 loguru
 schedule
-PyYAML
 pyyaml
+pyaml
