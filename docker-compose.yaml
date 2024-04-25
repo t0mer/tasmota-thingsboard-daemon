@@ -3,7 +3,7 @@ version: "3.7"
 
 services:
 
-  tasmota-bot:
+  tasmota-tb:
     image: techblog/tasmota-tb
     container_name: tasmota-tb
     restart: always
