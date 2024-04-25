@@ -1,0 +1,6 @@
+devices:
+  - name: #Device friendly name
+    ip: #Device IP Address
+    username: #Device username
+    password: #Device Passwword
+    access_token: #Accees token of the device in Thingsvoard
