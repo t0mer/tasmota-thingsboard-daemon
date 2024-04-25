@@ -1,0 +1,14 @@
+---
+version: "3.7"
+
+services:
+
+  tasmota-bot:
+    image: techblog/tasmota-tb
+    container_name: tasmota-tb
+    restart: always
+    environment:
+      - TB_SERVER_ADDRESS= #eg. http://localhost:8080 http://my-server.addrsss https://mytb.com
+      - REPORT_INTERVAL= #In minutes
+    volumes:
+      - ./tasmota-bot/config:/app/config
