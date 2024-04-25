@@ -1,3 +1,4 @@
 loguru
 schedule
 PyYAML
+pyyaml
