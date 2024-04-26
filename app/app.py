@@ -12,7 +12,7 @@ import time
 class Exporter:
     def __init__(self):
         self.devices = []
-        self.report_interval = int(os.getenv("REPORT_INTERVEL"))
+        self.report_interval = int(os.getenv("REPORT_INTERVAL"))
         self.tb_server_address= os.getenv("TB_SERVER_ADDRESS")
         self.config_path = 'config/devices.yaml'
         self.load_devices()
