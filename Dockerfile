@@ -20,4 +20,4 @@ COPY app /app
 
 WORKDIR /app
 
-ENTRYPOINT ["/usr/bin/python", "/app/app.py"]
+ENTRYPOINT python app.py
