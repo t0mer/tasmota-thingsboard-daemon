@@ -10,9 +10,9 @@ RUN apt -yqq update && \
     apt -yqq install fping && \
     rm -rf /var/lib/apt/lists/*
     
-RUN pip3 install --upgrade pip --no-cache-dir && \
-    pip3 install --upgrade setuptools --no-cache-dir && \
-    pip3 install --upgrade pyyaml requests loguru schedule
+RUN pip install --upgrade pip --no-cache-dir && \
+    pip install --upgrade setuptools --no-cache-dir && \
+    pip install --upgrade pyyaml requests loguru schedule
 
 RUN mkdir -p /app/config
 
@@ -20,4 +20,4 @@ COPY app /app
 
 WORKDIR /app
 
-ENTRYPOINT ["/usr/bin/python3", "/app/app.py"]
+ENTRYPOINT ["/usr/bin/python", "/app/app.py"]
