@@ -11,13 +11,10 @@ RUN apt -yqq update && \
     rm -rf /var/lib/apt/lists/*
     
 RUN pip3 install --upgrade pip --no-cache-dir && \
-    pip3 install --upgrade setuptools --no-cache-dir
+    pip3 install --upgrade setuptools --no-cache-dir && \
+    pip3 install --upgrade pyyaml requests loguru schedule
 
 RUN mkdir -p /app/config
-
-COPY requirements.txt /tmp
-
-RUN pip3 install -r /tmp/requirements.txt
 
 COPY app /app
 
