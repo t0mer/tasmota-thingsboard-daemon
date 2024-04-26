@@ -42,6 +42,6 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            techblog/tasmota-tb:latest
-            techblog/tasmota-tb:${{ steps.getSemver.outputs.semver }}       
+            techblog/tasmota-thingsboard-bridge:latest
+            techblog/tasmota-thingsboard-bridge:${{ steps.getSemver.outputs.semver }}       
 
