@@ -3,9 +3,9 @@ version: "3.7"
 
 services:
 
-  tasmota-tb:
-    image: techblog/tasmota-tb
-    container_name: tasmota-tb
+  tasmota-thingsboard-bridge:
+    image: techblog/tasmota-thingsboard-bridge
+    container_name: tasmota-thingsboard-bridge
     restart: always
     environment:
       - TB_SERVER_ADDRESS= #eg. http://localhost:8080 http://my-server.addrsss https://mytb.com
