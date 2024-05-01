@@ -84,3 +84,4 @@ docker-compose logs -f mytb
 ```
 
 Replace mytb with the name of your service if different. After starting the containers, you can access ThingsBoard via http://{your-host-ip}:8080 in your browser.
+
